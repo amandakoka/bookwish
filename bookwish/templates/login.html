@@ -1,4 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-<h3 class="center-align">Log In</h3>
+<div class="row">
+    <form class="col s12 card blue-grey lighten-1">
+      <div class="row">
+        <h3 class="center-align white-text">Log In</h3>
+        <div class="input-field col s6">
+          <input id="username" type="text" class="validate white-text">
+          <label for="username" class="white-text">UserName</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="password" type="text" class="validate">
+          <label for="password" class="white-text">Password</label>
+        </div>
+      </div>
+    </form>
+</div>
 {% endblock %}
