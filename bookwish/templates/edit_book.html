@@ -7,25 +7,25 @@
     <form class="col s12" method="POST" action="{{ url_for('edit_book', book_id=book_id) }}">
         <div class="row">
             <div class="input-field col s12">
-                <input id="book_title" name="book_title" minlength="3" maxlength="50" type="text" class="validate" required>
+                <input id="book_title" name="book_title" value="{{ book.book_title }}" minlength="3" maxlength="50" type="text" class="validate" required>
                 <label for="book_title">Book Title</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="book_author" name="book_author" minlength="3" maxlength="50" type="text" class="validate" required>
+                <input id="book_author" name="book_author" value="{{ book.book_author }}" minlength="3" maxlength="50" type="text" class="validate" required>
                 <label for="book_author">Book Author</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="book_genre" name="book_genre" minlength="3" maxlength="50" type="text" class="validate" required>
+                <input id="book_genre" name="book_genre" value="{{ book.book_genre }}" minlength="3" maxlength="50" type="text" class="validate" required>
                 <label for="book_genre">Book Genre</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="book_link" name="book_link" minlength="3" maxlength="150" type="text" class="validate" required>
+                <input id="book_link" name="book_link" value="{{ book.book_link }}" minlength="3" maxlength="150" type="text" class="validate" required>
                 <label for="book_link">Book Link</label>
             </div>
         </div>
@@ -33,7 +33,7 @@
             <div class="input-field col s12">
                 <div class="switch">
                     <label for="has_read">
-                        <input id="has_read" name="has_read" type="checkbox">
+                        <input id="has_read" name="has_read" value="{{ book.has_read }}" type="checkbox">
                         <span class="lever"></span>
                         Has Read
                     </label>
