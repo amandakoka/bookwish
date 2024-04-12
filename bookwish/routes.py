@@ -16,3 +16,15 @@ def signup():
 @app.route("/login")
 def login():
     return render_template("login.html")
+
+
+@app.route("/wishlist")
+def wishlist():
+    return render_template("wishlist.html")
+
+
+@app.route("/add_book", methods=["GET", "POST"])
+def add_book():
+    return render_template("add_book.html")
+
+
