@@ -1,6 +1,7 @@
-from flask import render_template, request, redirect, url_for
+from flask import render_template, request, redirect, url_for, flash, session
 from bookwish import app, db
 from bookwish.models import User, Book
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 @app.route("/")
@@ -8,8 +9,21 @@ def home():
     return render_template("welcome.html")
 
 
-@app.route("/signup")
+@app.route("/signup", methods=["GET", "POST"])
 def signup():
+    if request.method == "POST":
+        username = request.form.get("username")
+        password = request.form.get("password")
+        existing_user = User.query.filter_by(username=username).first()
+        if existing_user:
+            flash("Username already exists. Please choose a different one.", "error")
+            return redirect(url_for("signup"))
+        hashed_password = generate_password_hash(password)
+        new_user = User(username=username, password_hash=hashed_password)
+        db.session.add(new_user)
+        db.session.commit()
+        flash("Account created successfully. You can now log in.", "success")
+        return redirect(url_for("login"))
     return render_template("signup.html")
 
 
