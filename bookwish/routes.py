@@ -27,8 +27,18 @@ def signup():
     return render_template("signup.html")
 
 
-@app.route("/login")
+@app.route("/login", methods=["GET", "POST"])
 def login():
+    if request.method == "POST":
+        username = request.form.get("username")
+        password = request.form.get("password")
+        user = User.query.filter_by(username=username).first()
+        if user and check_password_hash(user.password_hash, password):
+            session["user_id"] = user.id
+            flash("Logged in successfully.", "success")
+            return redirect(url_for("wishlist"))
+        else:
+            flash("Invalid username or password.", "error")
     return render_template("login.html")
 
 
