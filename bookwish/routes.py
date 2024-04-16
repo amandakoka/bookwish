@@ -42,6 +42,13 @@ def login():
     return render_template("login.html")
 
 
+@app.route("/logout")
+def logout():
+    session.pop("user_id", None)
+    flash("You have been logged out.", "success")
+    return redirect(url_for("home"))
+
+
 @app.route("/wishlist")
 def wishlist():
     books = Book.query.all()
