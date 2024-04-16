@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-    <form class="col s12 card blue-grey lighten-1">
+  <form action="{{ url_for('login') }}" method="POST" class="col s12 card blue-grey lighten-1">
       <div class="row">
         <h3 class="center-align white-text">Log In</h3>
         <div class="input-field col s6">
-          <input id="username" type="text" class="validate white-text">
+          <input id="username" name="username" type="text" class="validate white-text">
           <label for="username" class="white-text">UserName</label>
         </div>
         <div class="input-field col s6">
-          <input id="password" type="text" class="validate">
+          <input id="password" name="password" type="password" class="validate">
           <label for="password" class="white-text">Password</label>
         </div>
       </div>
