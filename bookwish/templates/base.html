@@ -19,6 +19,9 @@
                 <li><a href="{{ url_for('signup')}}">Sign up</a></li>
                 <li><a href="{{ url_for('login')}}">Log in</a></li>
                 <li><a href="{{ url_for('wishlist')}}">Wishlist</a></li>
+                {% if session.user_id %}
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                {% endif %}
               </ul>
             </div>
           </nav>
@@ -28,9 +31,23 @@
                 <li><a href="{{ url_for('signup')}}">Sign up</a></li>
                 <li><a href="{{ url_for('login')}}">Log in</a></li>
                 <li><a href="{{ url_for('wishlist')}}">Wishlist</a></li>
-          </ul>
+                {% if session.user_id %}
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                {% endif %}
+              </ul>
     </header>
     <main class="container" id="bg">
+      <!-- Flash messages display -->
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
         {% block content %}
         {% endblock %}
     </main>
