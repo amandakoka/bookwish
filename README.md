@@ -61,17 +61,29 @@ BookWish caters to avid readers and book enthusiasts who seek a centralized plat
 # Design 
 ## Design Choices 
 
+
 ## Colour 
+The color scheme for this project was carefully chosen to harmonize with the background imagery of books, creating a visually cohesive and engaging user experience.
+#### Color Choices
+- **Orange Accent-3**: The vibrant "orange accent-3" from the Materialize color palette was selected to infuse energy and warmth into the design. This bold color choice evokes feelings of enthusiasm and creativity, adding dynamism to key elements of the interface.
+  
+- **Blue-Grey Lighten-1**: Complementing the vibrant orange accent, the "blue-grey lighten-1" color offers a balanced and calming backdrop. This neutral hue provides visual harmony while ensuring readability and professionalism.
+  
+- **White Text**: To ensure optimal readability and clarity, white text was chosen against the colored backgrounds. This choice creates a high contrast, enhancing legibility and accessibility for users. Additionally, white text conveys a sense of cleanliness and modernity, aligning with contemporary design principles.
+
+- **Harmonious Palette**: By integrating the orange accent, blue-grey background, and white text, a harmonious color palette was achieved. This cohesive combination reflects the ambiance and theme of the project, enhancing overall visual appeal and coherence.
+
+- **Brand Identity**: Consistent use of colors throughout the project establishes a recognizable brand identity. The cohesive color scheme fosters brand association and strengthens user engagement, contributing to a memorable user experience.
+
+- **User Experience**: The vibrant orange accent guides users' attention to important elements, while the calming blue-grey background promotes a relaxed browsing experience. These color choices enhance user engagement and facilitate intuitive navigation.
 
 ## Images 
 I have chosen a backgorund of books to relate to the purpsoe of the website. 
 
-## Fonts
-
 ## Structure 
 The website is structured in a user-friendly accessible way. The webiste consists of 4 pages:
 1. Homepage:
-- The user is greeted straight away with a welcome message and the purpose of the website is explained and a link to register fro an account or sign in if you already have an account. 
+- The user is greeted straight away with a welcome message and the purpose of the website is explained and a link to register for an account or sign in if you already have an account. 
 2. Register page:
 - The user is shown a form that will need to be completed if they want an account. 
 - Once they have registered, they will be redirected to the sign in page. 
@@ -79,34 +91,41 @@ The website is structured in a user-friendly accessible way. The webiste consist
 - Again a form is displayed where users can enter their account details to sign in.
 - Once they have signed in they have access to their own book wishlist.
 4. Wishlist page:
-- This is the main page of the webiste where users can add, edit and delete books to their wishlist. 
-
+- This is the main page of the webiste where users can add, edit and delete books to their wishlist. Only users logged in can access this if not theyre redirected to the log in page with a message saying you need to be logged in to view the wishlist.
 
 ## Wireframes 
 * [Home page](documentation/wireframes/welcomepage.png)
-* [Register page](documentation/wireframes/registerpage.png)
-* [Sign up page](documentation/wireframes/signuppage.png)
+* [Sign Up page](documentation/wireframes/signuppage.png)
+* [Sign In page](documentation/wireframes/signin.png)
 * [Wishlist page](documentation/wireframes/wishlistpage.png)
 
 # Features 
+This website consists of 6 pages which are extended from a base template.
+- Welcome page 
+- Sign Up page 
+- Login Page
+- Wishlist Page
+- Add Book page 
+- Edit Book page 
+
 ### Home page
-- Welcomes the user and explains the purpose of the site and has links to register or sign in. 
+- Welcomes the user and explains the purpose of the site and has links to sign up or log in. 
 <details>
 <summary>Screenshots</summary>
 <br>
 <img src="documentation/features/">
 </details>
 
-### Register Form
-- Users can register for an account their information will be stored and will be redirected to the sign in page.
+### Sign Up Form
+- Users can register for an account their information will be stored and will be redirected to the sign in page. A message will appear if the username already exists. 
 <details>
 <summary>Screenshots</summary>
 <br>
 <img src="documentation/features/">
 </details>
 
-### Sign in form
-- The details users input will be checked against the database and if correct users will sign into their account where they have access to their personal book wishlist.
+### Sign In form
+- The details users input will be checked against the database and if the details are correct users are signd into their account where they have access to their personal book wishlist. Once signed in too the navbar has another link where a user can log out of their account.
 <details>
 <summary>Screenshots</summary>
 <br>
@@ -114,7 +133,7 @@ The website is structured in a user-friendly accessible way. The webiste consist
 </details>
 
 ### Wishlist 
-- Once on the wishlist page users can add a book they'd like, edit them and even delete them. 
+- If a user presses the wishlist in the navbar without signing in they are redirected to the log in page and shown a message saying you need to log into your account to see your wishlist. Once a user is signed in, they can add books to their wishlist, as well as edit and delete them. The wishlist items are personalized to each user, ensuring that only they can see and modify their own wishlist.
 <details>
 <summary>Screenshots</summary>
 <br>
@@ -133,11 +152,11 @@ The quiz is designed to be fully responsive, ensuring an optimal experience acro
 ## Frameworks & Tools
 - [Figma](https://www.figma.com/): Utilized for creating wireframes, providing a visual representation of the website's layout and design.
 - [Google Fonts](https://fonts.google.com/): Integrated to enhance the typography, offering a diverse range of fonts to elevate the visual aesthetics of the content.
-- [Font Awesome](https://fontawesome.com/): Incorporated for the inclusion of icons in the footer, contributing to a more visually appealing and informative user interface.
 - [GitHub](https://github.com/): Employed as a version control system and a collaborative platform for storing and managing the project's source code
 - [Git](https://git-scm.com/): Utilized for version control, allowing seamless collaboration, tracking changes, and ensuring a well-documented development process. Commits and pushes to GitHub provide a clear history of project evolution.
 - [Pixelied](https://pixelied.com/convert/png-converter/png-to-webp): Convert png image to webp.
 - [TinyPNG](https://tinypng.com/): Compress webp image.
+- Materialize: 
 
 # Databases & User Journey
 ![UserJourney](documentation/userjourney.png)
