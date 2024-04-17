@@ -10,58 +10,46 @@
 </head>
 <body>
     <header>
-        <nav class ="orange accent-3">
+        <nav class="orange accent-3">
             <div class="nav-wrapper">
-              <a href="{{ url_for('home')}}" class="brand-logo"><i class="small material-icons">book</i>Book Wish</a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="{{ url_for('home')}}">Home</a></li>
-                <li><a href="{{ url_for('signup')}}">Sign up</a></li>
-                <li><a href="{{ url_for('login')}}">Log in</a></li>
-                <li><a href="{{ url_for('wishlist')}}">Wishlist</a></li>
-                {% if session.user_id %}
-                <li><a href="{{ url_for('logout') }}">Logout</a></li>
-                {% endif %}
-              </ul>
+                <a href="{{ url_for('home') }}" class="brand-logo"><i class="small material-icons">book</i>Book Wish</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('signup') }}">Sign up</a></li>
+                    <li><a href="{{ url_for('login') }}">Log in</a></li>
+                    <li><a href="{{ url_for('wishlist') }}">Wishlist</a></li>
+                    {% if session.user_id %}
+                        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                    {% endif %}
+                </ul>
             </div>
-          </nav>
-        
-          <ul class="sidenav" id="mobile-demo">
-                <li><a href="{{ url_for('home')}}">Home</a></li>
-                <li><a href="{{ url_for('signup')}}">Sign up</a></li>
-                <li><a href="{{ url_for('login')}}">Log in</a></li>
-                <li><a href="{{ url_for('wishlist')}}">Wishlist</a></li>
-                {% if session.user_id %}
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign up</a></li>
+            <li><a href="{{ url_for('login') }}">Log in</a></li>
+            <li><a href="{{ url_for('wishlist') }}">Wishlist</a></li>
+            {% if session.user_id %}
                 <li><a href="{{ url_for('logout') }}">Logout</a></li>
-                {% endif %}
-              </ul>
+            {% endif %}
+        </ul>
     </header>
-    <main class="container" id="bg">
-      <!-- Flash messages display -->
-      {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        {% for message in messages %}
-          <div class="alert">
-            {{ message }}
-          </div>
-        {% endfor %}
-      {% endif %}
-    {% endwith %}
-
+    
+    <main class="container">
         {% block content %}
         {% endblock %}
     </main>
 
     <footer class="page-footer orange accent-3">
         <div class="footer-copyright">
-          <div class="container">
-            <p>© 2024 Book Wish. All rights reserved.</p>
-          </div>
+            <div class="container">
+                <p>© 2024 Book Wish. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-</body>
 </body>
 </html>
