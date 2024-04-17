@@ -12,14 +12,13 @@
     1. [Target Audience](#target-audience)
     2. [User Requirements and Expectations](#user-requirements-and-expectations)
     3. [User Stories](#user-stories)
-3. [Design](#design)
-    1. [Design Choices](#design-choices)
-    2. [Images](#images)
-    3. [Colour](#colours)
-    4. [Fonts](#fonts)
-    5. [Structure](#structure)
-    6. [Wireframes](#wireframes)
-    7. [Database schema & User Journey]
+3. [Design Choices](#design-choices)
+    1. [Images](#images)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+    6. [Database schema & User Journey]
 4. [Features](#features)
 5. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -58,9 +57,7 @@ BookWish caters to avid readers and book enthusiasts who seek a centralized plat
 5.  **Editing Books:** As a user, I want to be able to edit the details of books I have added to my wishlist.
 6.  **Deleting Books:** As a user, I want to have the option to remove books from my wishlist.
 
-# Design 
-## Design Choices 
-
+# Design Choices 
 
 ## Colour 
 The color scheme for this project was carefully chosen to harmonize with the background imagery of books, creating a visually cohesive and engaging user experience.
@@ -78,8 +75,7 @@ The color scheme for this project was carefully chosen to harmonize with the bac
 - **User Experience**: The vibrant orange accent guides users' attention to important elements, while the calming blue-grey background promotes a relaxed browsing experience. These color choices enhance user engagement and facilitate intuitive navigation.
 
 ## Images 
-I have chosen a backgorund of books to relate to the purpsoe of the website. 
-
+The background imagery of books was carefully selected to resonate with the website's purpose and theme. Books symbolize knowledge, exploration, and personal growth, aligning perfectly with the concept of a book wishlist platform. The use of imagery not only enhances visual appeal but also reinforces the website's identity and mission. The image used is credited in the credits section at the bottom of this file.
 ## Structure 
 The website is structured in a user-friendly accessible way. The webiste consists of 4 pages:
 1. Homepage:
@@ -99,6 +95,8 @@ The website is structured in a user-friendly accessible way. The webiste consist
 * [Sign In page](documentation/wireframes/signin.png)
 * [Wishlist page](documentation/wireframes/wishlistpage.png)
 
+## Database Schema & User journey 
+
 # Features 
 This website consists of 6 pages which are extended from a base template.
 - Welcome page 
@@ -113,7 +111,7 @@ This website consists of 6 pages which are extended from a base template.
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/features/">
+<img src="documentation/features/welcomepage.png">
 </details>
 
 ### Sign Up Form
@@ -121,15 +119,17 @@ This website consists of 6 pages which are extended from a base template.
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/features/">
+<img src="documentation/features/usernamealrexist">
+<img src="documentation/features/signupredirect.png">
 </details>
 
-### Sign In form
+### Log In Form
 - The details users input will be checked against the database and if the details are correct users are signd into their account where they have access to their personal book wishlist. Once signed in too the navbar has another link where a user can log out of their account.
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/features/">
+<img src="documentation/features/invalidlogin.png">
+<img src="documentation/features/loginsuccess.png">
 </details>
 
 ### Wishlist 
@@ -137,7 +137,31 @@ This website consists of 6 pages which are extended from a base template.
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/features/">
+<img src="documentation/features/loginsuccess.png">
+</details>
+
+### Add Book 
+- Users can add a book to their wishlist by clicking on the "Add Book" button, which redirects them to the add book page. Here, they fill out a form with details such as book title, author, etc. Once submitted, the book is added to their wishlist.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/addbook.png">
+</details>
+
+### Edit Book
+- If a user needs to make changes to a book's details, they can click on the "Edit" button. This action redirects them to the edit book page, where they can modify any section of the book's information and save the updated version.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/editbook.png">
+</details>
+
+### Delete Book
+- To remove a book from their wishlist, users can click on the "Delete" button. This action triggers a modal confirmation prompt to ensure the user intends to delete the book. Upon confirmation, the book is permanently removed from their wishlist.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/modaldelete.png">
 </details>
 
 ### Responsive Design:
