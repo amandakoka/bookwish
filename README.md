@@ -96,7 +96,7 @@ The website is structured in a user-friendly accessible way. The webiste consist
 
 ## Database Schema & User journey 
 
-#### User journey 
+#### User Journey 
 ![User Journey](documentation/userjourney.png)
 
 #### Database Schema
@@ -180,12 +180,18 @@ The quiz is designed to be fully responsive, ensuring an optimal experience acro
 - Python 
 ## Frameworks & Tools
 - [Figma](https://www.figma.com/): Utilized for creating wireframes, providing a visual representation of the website's layout and design.
-- [Google Fonts](https://fonts.google.com/): Integrated to enhance the typography, offering a diverse range of fonts to elevate the visual aesthetics of the content.
 - [GitHub](https://github.com/): Employed as a version control system and a collaborative platform for storing and managing the project's source code
 - [Git](https://git-scm.com/): Utilized for version control, allowing seamless collaboration, tracking changes, and ensuring a well-documented development process. Commits and pushes to GitHub provide a clear history of project evolution.
 - [Pixelied](https://pixelied.com/convert/png-converter/png-to-webp): Convert png image to webp.
 - [TinyPNG](https://tinypng.com/): Compress webp image.
-- Materialize: 
+- Materialize: CSS framework.
+- Materialize Icons: Integrated for iconography within the Materialize framework.
+- Canva: Utilized for creating flowcharts
+- Draw SQL: Employed for designing the database schema.
+- Chrome Developer Tools: Utilized for debugging, testing, and analyzing website performance directly within the Chrome browser.
+- Flask: framework 
+- PostgreSQL: Used as the relational database management system.
+- Jinja: Templating engine 
 
 # Testing
 Testing for this website can be found in the [TESTING.md](TESTING.md)
