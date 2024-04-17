@@ -15,10 +15,9 @@
 3. [Design Choices](#design-choices)
     1. [Images](#images)
     2. [Colour](#colours)
-    3. [Fonts](#fonts)
-    4. [Structure](#structure)
-    5. [Wireframes](#wireframes)
-    6. [Database schema & User Journey]
+    3. [Structure](#structure)
+    4. [Wireframes](#wireframes)
+    5. [Database schema & User Journey](#database-schema--user-journey)
 4. [Features](#features)
 5. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -96,6 +95,12 @@ The website is structured in a user-friendly accessible way. The webiste consist
 * [Wishlist page](documentation/wireframes/wishlistpage.png)
 
 ## Database Schema & User journey 
+
+#### User journey 
+![User Journey](documentation/userjourney.png)
+
+#### Database Schema
+![Database Schema](documentation/databaseschema.png)
 
 # Features 
 This website consists of 6 pages which are extended from a base template.
