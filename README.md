@@ -187,9 +187,6 @@ The quiz is designed to be fully responsive, ensuring an optimal experience acro
 - [TinyPNG](https://tinypng.com/): Compress webp image.
 - Materialize: 
 
-# Databases & User Journey
-![UserJourney](documentation/userjourney.png)
-
 # Testing
 Testing for this website can be found in the [TESTING.md](TESTING.md)
 
