@@ -51,23 +51,35 @@ def logout():
 
 @app.route("/wishlist")
 def wishlist():
-    books = Book.query.all()
-    return render_template("wishlist.html", books=books)
+    if "user_id" in session:
+        user_id = session["user_id"]
+        user = User.query.get(user_id)
+        if user:
+            books = user.books 
+            return render_template("wishlist.html", books=books)
+    flash("You need to log in to view your wishlist.", "error")
+    return redirect(url_for("login"))
 
 
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
     if request.method == "POST":
-        book = Book(
-            book_title=request.form.get("book_title"),
-            book_author=request.form.get("book_author"),
-            book_genre=request.form.get("book_genre"),
-            book_link=request.form.get("book_link"),
-            has_read=bool(True if request.form.get("has_read") else False),
-        )
-        db.session.add(book)
-        db.session.commit()
-        return redirect(url_for("wishlist"))
+        if "user_id" in session:
+            user_id = session["user_id"]
+            book = Book(
+                book_title=request.form.get("book_title"),
+                book_author=request.form.get("book_author"),
+                book_genre=request.form.get("book_genre"),
+                book_link=request.form.get("book_link"),
+                has_read=bool(True if request.form.get("has_read") else False),
+                user_id=user_id
+            )
+            db.session.add(book)
+            db.session.commit()
+            return redirect(url_for("wishlist"))
+        else:
+            flash("You need to log in to add a book to your wishlist.", "error")
+            return redirect(url_for("login"))
     return render_template("add_book.html")
 
 
