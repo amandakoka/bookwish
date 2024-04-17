@@ -2,12 +2,17 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-image: url(../images/bookbg.webp); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 main {
     flex: 1 0 auto;
 }
-  
+
+
 /* Flash message styles */
 .alert {
     padding: 15px;
