@@ -202,21 +202,21 @@ Access control mechanisms are implemented to restrict unauthorized access to sen
 - HTML.
 - CSS.
 - JavaScript.
-- Python 
+- Python. 
 ## Frameworks & Tools
 - [Figma](https://www.figma.com/): Utilized for creating wireframes, providing a visual representation of the website's layout and design.
 - [GitHub](https://github.com/): Employed as a version control system and a collaborative platform for storing and managing the project's source code
 - [Git](https://git-scm.com/): Utilized for version control, allowing seamless collaboration, tracking changes, and ensuring a well-documented development process. Commits and pushes to GitHub provide a clear history of project evolution.
 - [Pixelied](https://pixelied.com/convert/png-converter/png-to-webp): Convert png image to webp.
 - [TinyPNG](https://tinypng.com/): Compress webp image.
-- Materialize: CSS framework.
-- Materialize Icons: Integrated for iconography within the Materialize framework.
-- Canva: Utilized for creating flowcharts
-- Draw SQL: Employed for designing the database schema.
-- Chrome Developer Tools: Utilized for debugging, testing, and analyzing website performance directly within the Chrome browser.
-- Flask: framework 
-- PostgreSQL: Used as the relational database management system.
-- Jinja: Templating engine 
+- [Materialize](https://materializecss.com/):  CSS framework.
+- [Materialize Icons](https://material.io/resources/icons/): Integrated for iconography within the Materialize framework.
+- [Canva](https://www.canva.com/): Utilized for creating flowcharts
+- [Draw SQL](https://drawsql.app/):Employed for designing the database schema.
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/): Utilized for debugging, testing, and analyzing website performance directly within the Chrome browser.
+- [Flask](https://flask.palletsprojects.com/): framework 
+- [PostgreSQL](https://www.postgresql.org/):Used as the relational database management system.
+- [Jinja](https://jinja.palletsprojects.com/): Templating engine 
 
 # Testing
 Testing for this website can be found in the [TESTING.md](TESTING.md)
