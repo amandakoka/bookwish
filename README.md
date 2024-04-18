@@ -59,7 +59,7 @@ BookWish caters to avid readers and book enthusiasts who seek a centralized plat
 # Design Choices 
 
 ## Colour 
-The color scheme for this project was carefully chosen to harmonize with the background imagery of books, creating a visually cohesive and engaging user experience.
+The colour scheme for this project was carefully chosen to harmonize with the background imagery of books, creating a visually cohesive and engaging user experience.
 #### Color Choices
 - **Orange Accent-3**: The vibrant "orange accent-3" from the Materialize color palette was selected to infuse energy and warmth into the design. This bold color choice evokes feelings of enthusiasm and creativity, adding dynamism to key elements of the interface.
   
@@ -317,7 +317,7 @@ You can clone the repository by following these steps:
 5. Type 'git clone' into the terminal, then paste the link you copied in step 3 and Press enter.
 
 # Credits 
-
 ## Media 
-Background image from [freepik]("https://www.freepik.com/free-photo/blurred-books-library-bookcase_2475569.htm#fromView=search&page=2&position=31&uuid=fe4e52a4-5cc3-4bf7-840d-df2de58fbc26")
+Background image from [freepik](https://www.freepik.com/free-photo/blurred-books-library-bookcase_2475569.htm#fromView=search&page=2&position=31&uuid=fe4e52a4-5cc3-4bf7-840d-df2de58fbc26)
+
 ## Code 
