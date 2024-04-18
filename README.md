@@ -13,8 +13,8 @@
     2. [User Requirements and Expectations](#user-requirements-and-expectations)
     3. [User Stories](#user-stories)
 3. [Design Choices](#design-choices)
-    1. [Images](#images)
-    2. [Colour](#colours)
+    1. [Colour](#colours)
+    2. [Images](#images)
     3. [Structure](#structure)
     4. [Wireframes](#wireframes)
     5. [Database schema & User Journey](#database-schema--user-journey)
@@ -23,7 +23,6 @@
 6. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks--tools)
-    3. [Databases & User Journey](#databases--user-journey)
 7. [Testing](#testing)
 8. [Deployment](#deployment)
 9. [Credits](#credits) 
@@ -98,10 +97,18 @@ The website is structured in a user-friendly accessible way. The webiste consist
 ## Database Schema & User journey 
 
 #### User Journey 
-![User Journey](documentation/userjourney.png)
+<details>
+<summary>Screenshot</summary>
+<br>
+<img src="documentation/userjourney.png">
+</details>
 
 #### Database Schema
-![Database Schema](documentation/databaseschema.png)
+<details>
+<summary>Screenshot</summary>
+<br>
+<img src="documentation/databaseschema.png">
+</details>
 
 # Features 
 This website consists of 6 pages which are extended from a base template.
