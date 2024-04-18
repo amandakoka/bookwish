@@ -19,13 +19,14 @@
     4. [Wireframes](#wireframes)
     5. [Database schema & User Journey](#database-schema--user-journey)
 4. [Features](#features)
-5. [Technologies Used](#technologies-used)
+5. [User Authentication](#user-authentication)
+6. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks--tools)
     3. [Databases & User Journey](#databases--user-journey)
-6. [Testing](#testing)
-7. [Deployment](#deployment)
-8. [Credits](#credits) 
+7. [Testing](#testing)
+8. [Deployment](#deployment)
+9. [Credits](#credits) 
     1. [Media](#media)
     2. [Code](#code)
 
@@ -171,6 +172,30 @@ This website consists of 6 pages which are extended from a base template.
 
 ### Responsive Design:
 The quiz is designed to be fully responsive, ensuring an optimal experience across various devices and screen sizes.
+
+# User Authentication
+
+User authentication is a crucial aspect of the BookWish website, ensuring that only authorized users have access to their personalized book wishlist. The authentication process involves registration, login, and session management to authenticate and authorize users securely.
+
+## Registration
+
+New users can register for an account by providing a unique username and a secure password. Upon registration, the user's credentials are securely stored in the database using password hashing to maintain confidentiality.
+
+## Login
+
+Registered users can log in to their accounts using their username and password. The login credentials are verified against the stored user data in the database. If the credentials match, the user is authenticated and granted access to their personalized wishlist.
+
+## Session Management
+
+Session management is employed to maintain user authentication throughout their interaction with the website. Upon successful login, a session is established, allowing the user to navigate between pages without the need for reauthentication. Sessions are securely managed using Flask's session mechanism, ensuring data integrity and preventing unauthorized access.
+
+## Password Security
+
+User passwords are securely hashed using the `generate_password_hash` function provided by Werkzeug. This ensures that passwords are not stored in plain text and cannot be retrieved even by the website administrators. When users log in, the hashed password stored in the database is compared with the hashed version of the password provided during login using the `check_password_hash` function, ensuring secure authentication.
+
+## Access Control
+
+Access control mechanisms are implemented to restrict unauthorized access to sensitive pages and functionalities, such as the user's wishlist. Only authenticated users are allowed to view, add, edit, or delete books from their wishlist. Unauthorized access attempts are redirected to the login page, ensuring the privacy and security of user data.
 
 # Technologies Used
 ## Languages  
