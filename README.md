@@ -229,7 +229,77 @@ Access control mechanisms are implemented to restrict unauthorized access to sen
 Testing for this website can be found in the [TESTING.md](TESTING.md)
 
 # Deployment
-The BookWish website is deployed on Heroku with elephantsql. 
+
+The BookWish website has been successfully deployed on Heroku, utilizing ElephantSQL for its database management. Below are the steps involved in the deployment process:
+
+## ElephantSQL Setup
+
+1. **Create ElephantSQL Account**:
+    - Sign up for an ElephantSQL account.
+    - Click “Create New Instance” and set up your plan.
+    - Select the Tiny Turtle (Free) plan, choose a name, and region.
+    - Review your details and click “Create instance”.
+    - Copy the database URL from the dashboard.
+2. **Prepare Heroku Files**:
+    - Generate a `requirements.txt` (contains a list of the Python dependencies that your project needs in order to run successfully) file with `pip freeze --local > requirements.txt`. After you run this command a new file called requirements.txt should appear in your root directory.
+    - Heroku requires a Procfile containing a command to run your program. Inside the root directory of your project create the new file. It must be called Procfile with a capital P, otherwise Heroku won’t recognise it. Inside the file add the command `web: python run.py`. Ensure you do not add a blank line to the end of the file as this can cause problems for deployment
+3. **Configure Database URL**:
+    - Open your `__init__.py` file and adjust `SQLALCHEMY_DATABASE_URI`. Add an if statement before the line setting the SLQALCHEMY_DATABASE_URI and, in the else, set the value to reference a new variable, `DATABASE_URL`.
+
+        ```python
+        app = Flask(__name__)
+        app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
+
+        if os.environ.get("DEVELOPMENT") == "True":
+            app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
+        else:
+            app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
+        ```
+
+    - To ensure that SQLAlchemy can also read your external database, its URL needs to start with “postgresql://”, but you should not change this in the environment variable. Instead,  make an addition to your else statement from the previous step to adjust your `DATABASE_URL` in case it starts with `postgres://`: 
+
+        ```python
+        if os.environ.get("DEVELOPMENT") == "True":
+            app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
+        else:
+            uri = os.environ.get("DATABASE_URL")
+            if uri.startswith("postgres://"):
+                uri = uri.replace("postgres://", "postgresql://", 1)
+            app.config["SQLALCHEMY_DATABASE_URI"] = uri
+        ```
+
+    - Save all your files and then add, commit and push your changes to GitHub.
+
+Now that you have your database and code in your IDE configured, you will need to add it to a Heroku app using a new environment variable (Config Var) called `DATABASE_URL`. Then your Heroku app will be able to connect to the external database.
+
+## Heroku Deployment
+
+1. **Create a Heroku App**:
+    - Log into Heroku.com and click “New” > “Create a new app”.
+    - Choose a unique name and region, then click “Create app”.
+2. **Configure Environment Variables**:
+    - Go to the Settings tab of your app.
+    - Click "Reveal Config Vars" and return to your ElephantSQL tab and copy your database URL. 
+    - Back on Heroku, add a Config Var called DATABASE_URL and paste your ElephantSQL database URL in as the value. Make sure you click “Add”
+    - Add each of your other environment variables except DEVELOPMENT and DB_URL from the env.py file as a Config Var. 
+    - Reminder to not wrap strings in quotes when adding them as values to Heroku Config Vars.
+3. **Deploy from GitHub**:
+    - Navigate to the “Deploy” tab of your app.
+    - In the Deployment method section select “Connect to GitHub”, search for your repo and click Connect 
+    - You can click Enable Automatic Deploys in case you make any further changes to the project. This will trigger any time code is pushed to your GitHub repository.
+    - To manually deploy go to the manual deploy section and click deploy branch.
+    - Click “Deploy Branch” to start the build process. This will start the build process. 
+4. **Initialize Database Tables**:
+    - Click “More” > “Run console” in your Heroku app.
+    - Type `python3` into the console and run.
+    - Enter the Python terminal and create tables with `from your_app import db` and `db.create_all()`.
+    - Exit the Python terminal and close the console.
+
+**Note**: If you make changes to your models during development, you will need to make these migrations again in the Heroku console.
+
+The app should be up and running now, so click the “Open app” button.
+
+Congratulations! You have successfully deployed your app to Heroku!
 
 ## Local Deployment
 You can fork the World flags Quiz repositry by following these steps:
