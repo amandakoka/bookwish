@@ -17,6 +17,109 @@
 ## Python validation
 ## Lighthouse
 ## Testing user stories
+
+1. As a user, I want to understand the purpose of the site and navigate it easily.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Welcome Card on the Welcome Page | View the Welcome Page | Upon landing on the Welcome Page, a prominent Welcome Card is displayed, containing clear and concise content explaining the purpose of the website. | Upon accessing the Welcome Page, a visually appealing Welcome Card is presented, featuring an inviting message outlining the website's purpose. The card includes noticeable links for sign-up and login, facilitating easy access to account creation and login functionalities. |
+| Navigation Links on the Welcome Page|View the Navigation Links | Beneath the Welcome Card, visible and intuitive navigation links, such as "Sign Up" and "Log In", are displayed, enabling seamless navigation to account creation and login processes.| Below the Welcome Card, easily accessible navigation links are present, allowing swift movement to the sign-up and login sections. The links are clearly labeled, aiding users in understanding the next steps to access the website's features. |
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/user-stories/">
+</details>
+
+2. As a user, I want to register for an account.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Sign-Up Form on Sign-Up Page | View and Fill in Sign-Up Form | When accessing the Sign-Up Page, a clear and accessible Sign-Up Form is displayed, prompting the user to input necessary details such as username and password.| Upon accessing the Sign-Up Page, a well-structured Sign-Up Form is presented, allowing users to input their desired username and password in designated fields. The form is user-friendly and provides clear instructions on required fields.|
+| Account Creation | Submit Sign-Up Form | After filling in the required information and submitting the Sign-Up Form, the user's account is successfully created, and they are redirected to the login page to access their newly registered account.| Once the user submits the Sign-Up Form, their account is successfully created, and they are automatically redirected to the login page. A confirmation message is displayed, informing the user that their account has been successfully registered.|
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/user-stories">
+</details>
+
+3. As a user, I want to log into my account.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Login form on login page | View and Fill in Login Form | Upon accessing the Login Page, a clear and accessible Login Form is displayed, prompting the user to input necessary details such as username and password.| Upon accessing the Login Page, a Login Form is presented, allowing users to input their username and password in designated fields.|
+| Redirect to Wishlist Page | Submit Login Form | After filling in the required login credentials and submitting the form, the user is redirected to their Wishlist Page, where they can view their personalized book wishlist. |After submitting the Login Form with valid credentials, the user is successfully redirected to their Wishlist Page, confirming the login.|
+| Successful Login Notification | View Notification Message | Upon successful login and redirection to the Wishlist Page, a notification message is displayed, confirming that the user has logged in successfully. | After being redirected to the Wishlist Page, a notification message appears, indicating a successful login.|
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/user-stories">
+</details>
+
+4. As a user, I want to easily add books to my wishlist.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Add book button | Press the button | Upon pressing the "Add Book" button, the user should be redirected to the Add Book Form page. | When the user presses the "Add Book" button, they are directed to the Add Book Form page.|
+| Add book form | Fill in the Form | After filling in all required fields in the Add Book Form and pressing the "Add Book" button, the book should be added to the user's wishlist. | After completing all required fields in the Add Book Form and clicking the "Add Book" button, the book is successfully added to the user's wishlist. |
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/user-stories">
+</details>
+
+5. As a user, I want to be able to edit the details of books I have added to my wishlist.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Edit Button on Book | Press the button | Upon pressing the "Edit Book" button on a book card in the wishlist, the user should be redirected to the Edit Book Form page.| When the user presses the "Edit Book" button, they are directed to the Edit Book Form page.|
+| Edit Book Form | Fill in the Form | After filling in all required fields in the Edit Book Form and pressing the "Edit Book" button, the book details should be updated in the user's wishlist. | After completing all required fields in the Edit Book Form and clicking the "Edit Book" button, the book is successfully edited in the user's wishlist. |
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/user-stories">
+</details>
+
+6. As a user, I want to have the option to remove books from my wishlist.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Delete Button | Press the button| Upon pressing the "Delete" button on a book card in the wishlist, a modal should appear asking for confirmation to delete the book. If confirmed, the book should be removed from the wishlist.| When the user presses the "Delete" button, a modal should appear asking for confirmation. If confirmed, the book is removed from the wishlist.|
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/user-stories">
+</details>
+
+7. As a user, I want assurance that my wishlist remains private and accessible only to me.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Wishlist Access | Click on Wishlist| When a user who is not logged in clicks on the Wishlist link in the navigation bar, they should be redirected to the login page and shown a message indicating that they need to log in to view their wishlist. | When a non-logged-in user clicks on the Wishlist link, they are redirected to the login page with a message stating they need to log in to view their wishlist.|
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/user-stories">
+</details>
+
+8. As a user, I want a straightforward and quick method to log out of my account, ensuring my privacy and security.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Logout Button | Click the Button | When a logged-in user clicks on the logout button in the navigation bar, they should be logged out of their account and redirected to the Welcome Page. Additionally, a message confirming successful logout should be displayed. | Upon clicking the logout button in the navbar, the user is logged out of their account and redirected to the Welcome Page. A message confirming successful logout is displayed. |
+
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/user-stories">
+</details>
+
 ## Bugs
 ### Solved Bugs
  **Bug** | **Fix** |
