@@ -86,6 +86,9 @@ Although I have opted to leave the errors unresolved at this time, I remain comm
 By documenting these challenges and decisions, I ensure transparency and accountability in my development process, fostering continuous improvement and refinement of my website's CSS code.
 
 ## JavaScript validation
+To validate javascript jshint was used. 
+- [script.js](documentation/testing/js-val/js-val.png)
+
 ## Python validation
 ## Lighthouse
 
