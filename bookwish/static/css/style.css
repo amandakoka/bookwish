@@ -36,6 +36,11 @@ main {
     overflow: auto;
 }
 
+/* Override letter-spacing for .table-of-contents a error */
+.table-of-contents a {
+    letter-spacing: 0.4em;
+}
+
   
 
 
