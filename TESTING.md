@@ -17,49 +17,74 @@ Ensuring compliance with HTML standards is crucial for maintaining a consistent 
 
 ### Validation Results:
 
-#### Welcome Page:
-- Initial Validation: ![Initial Welcome Page Validation](documentation/testing/html-val/initialwelcomepage.png)
-- Final Validation: ![Welcome Page Validation](documentation/testing/html-val/welcomepageval.png)
+<details>
+  <summary>Welcome Page:</summary>
+  - Initial Validation: ![Initial Welcome Page Validation](documentation/testing/html-val/initialwelcomepage.png)
+  - Final Validation: ![Welcome Page Validation](documentation/testing/html-val/welcomepageval.png)
 
-An error appeared during the initial validation of the welcome page, which was promptly addressed to ensure compliance with HTML standards.
+  An error appeared during the initial validation of the welcome page, which was promptly addressed to ensure compliance with HTML standards.
+</details>
 
-#### Sign Up Page:
-- Validation: ![Sign Up Page Validation](documentation/testing/html-val/signupval.png)
+<details>
+  <summary>Sign Up Page:</summary>
+  - Validation: ![Sign Up Page Validation](documentation/testing/html-val/signupval.png)
+</details>
 
-#### Log In Page:
-- Validation: ![Log In Page Validation](documentation/testing/html-val/login.png)
+<details>
+  <summary>Log In Page:</summary>
+  - Validation: ![Log In Page Validation](documentation/testing/html-val/login.png)
+</details>
 
-#### Wishlist Page:
-- Validation: ![Wishlist Page Validation](documentation/testing/html-val/wishlistval.png)
+<details>
+  <summary>Wishlist Page:</summary>
+  - Validation: ![Wishlist Page Validation](documentation/testing/html-val/wishlistval.png)
+</details>
 
-#### Add Book Page:
-- Validation: ![Add Book Page Validation](documentation/testing/html-val/addbookval.png)
+<details>
+  <summary>Add Book Page:</summary>
+  - Validation: ![Add Book Page Validation](documentation/testing/html-val/addbookval.png)
+</details>
 
-#### Edit Book Page:
-- Validation: ![Edit Book Page Validation](documentation/testing/html-val/editbookval.png)
+<details>
+  <summary>Edit Book Page:</summary>
+  - Validation: ![Edit Book Page Validation](documentation/testing/html-val/editbookval.png)
+</details>
 
-## CSS validation
-For CSS validation i have uses jigsaw validator 
-I tested all pages and the same error kept coming up 
-[Error](documentation/testing/css-val/css-error-val.png)
+## CSS Validation
 
-To fix this i overrode the styling in my own css file. 
+During CSS validation using the Jigsaw validator, the same errors were encountered across all pages:
 
-#### Sign Up Page:
-- Validation: ![Sign Up Page Validation](documentation/testing)
+<details>
+  <summary>Error</summary>
+  ![Error](documentation/testing/css-val/css-error-val.png)
+</details>
 
-#### Log In Page:
-- Validation: ![Log In Page Validation](documentation/testing)
+To resolve this issue, I applied overrides in my own CSS file.
 
-#### Wishlist Page:
-- Validation: ![Wishlist Page Validation](documentation/testing)
+<details>
+  <summary>Sign Up Page:</summary>
+  - Validation: ![Sign Up Page Validation](documentation/testing)
+</details>
 
-#### Add Book Page:
-- Validation: ![Add Book Page Validation](documentation/testing)
+<details>
+  <summary>Log In Page:</summary>
+  - Validation: ![Log In Page Validation](documentation/testing)
+</details>
 
-#### Edit Book Page:
-- Validation: ![Edit Book Page Validation](documentation/testing)
+<details>
+  <summary>Wishlist Page:</summary>
+  - Validation: ![Wishlist Page Validation](documentation/testing)
+</details>
 
+<details>
+  <summary>Add Book Page:</summary>
+  - Validation: ![Add Book Page Validation](documentation/testing)
+</details>
+
+<details>
+  <summary>Edit Book Page:</summary>
+  - Validation: ![Edit Book Page Validation](documentation/testing)
+</details>
 
 ## JavaScript validation
 ## Python validation
