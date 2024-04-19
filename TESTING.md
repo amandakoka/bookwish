@@ -11,6 +11,26 @@
     1. [Solved Bugs](#solved-bugs)
     2. [Known Bugs](#known-bugs)
 
+# Testing
+
+The website was tested on the following devices: 
+
+- MacBook air 13 inch
+- Ipad 7th Gen
+- Iphone 12
+- Iphone 12 mini
+
+In addition, the website was tested using google chrome developer tools to ensure the responsiveness on different screen sizes by pressing all device options.
+
+### Browser testing
+
+The website was tested on the following browsers:
+
+- Google Chrome
+- Safari
+- Firefox
+
+
 ## HTML Validation
 
 Ensuring compliance with HTML standards is crucial for maintaining a consistent and user-friendly web experience. Below, you'll find validation results for each page, detailing any errors encountered during the validation process and the steps taken to address them.
@@ -90,7 +110,105 @@ To validate javascript jshint was used.
 - [script.js](documentation/testing/js-val/js-val.png)
 
 ## Python validation
+
+### Debug Mode Set to False
+
+During development, the Flask application's `DEBUG` mode was set to `False` to simulate the production environment accurately. This configuration helped in detecting potential errors and misconfigurations that might occur when the application is deployed in a production environment.
+
+### Route Testing
+
+Each route in the application was thoroughly tested during development to ensure that it behaves as intended. Here's how the testing process was conducted for each route:
+
+1. **Home Route (`/`)**:
+   - Verify that the home route renders the `welcome.html` template correctly.
+   - Ensure that the route redirects to the login page if the user is not authenticated.
+
+2. **Signup Route (`/signup`)**:
+   - Test user registration by submitting valid and invalid signup forms.
+   - Verify that the route handles duplicate usernames gracefully.
+   - Confirm that the user is redirected to the login page after successful registration.
+
+3. **Login Route (`/login`)**:
+   - Test user login with valid and invalid credentials.
+   - Ensure that the user session is created upon successful login.
+   - Verify that appropriate error messages are displayed for invalid login attempts.
+
+4. **Logout Route (`/logout`)**:
+   - Test user logout functionality by checking if the session is cleared upon logout.
+   - Confirm that the user is redirected to the home page after logout.
+
+5. **Wishlist Route (`/wishlist`)**:
+   - Validate that the wishlist route displays the user's wishlist if the user is authenticated.
+   - Test redirection to the login page if the user is not authenticated.
+
+6. **Add Book Route (`/add_book`)**:
+   - Test adding a new book to the wishlist by submitting the add book form with valid data.
+   - Verify that the route redirects to the login page if the user is not authenticated.
+
+7. **Edit Book Route (`/edit_book/<int:book_id>`)**:
+   - Test updating book details by submitting the edit book form with valid data.
+   - Ensure that the route handles invalid book IDs gracefully.
+
+8. **Delete Book Route (`/delete_book/<int:book_id>`)**:
+   - Test deleting a book from the wishlist by submitting the delete book form.
+   - Ensure that the route handles invalid book IDs gracefully.
+
+### PEP8 Style Considerations
+
+Throughout development, I've strived to adhere to PEP8 guidelines for coding style. While I've thoroughly reviewed the guidelines and made efforts to apply them consistently, achieving perfect compliance can be challenging.
+
+Here's how I approached PEP8 compliance:
+
+- I familiarized myself with the PEP8 documentation.
+- I applied PEP8 guidelines, focusing on naming conventions, indentation, and spacing.
+- Despite challenges, I prioritized readability and maintainability to optimize the codebase for reliability.
+
 ## Lighthouse
+
+Lighthouse google develop tools was uses to test.
+
+#### Welcome Page
+<details>
+<summary>Screenshot</summary>
+<br>
+<img src="documentation/testing/lighthouse/lighthousewelcome.png">
+</details>
+
+#### Sign Up Page
+<details>
+<summary>Screenshot</summary>
+<br>
+<img src="documentation/testing/lighthouse/lighthouse-signup.png">
+</details>
+
+#### Log In Page
+<details>
+<summary>Screenshot</summary>
+<br>
+<img src="documentation/testing/lighthouse/lighthouse-login.png">
+</details>
+
+#### Wishlist Page
+<details>
+<summary>Screenshot</summary>
+<br>
+<img src="documentation/testing">
+</details>
+
+#### Add Book Page
+<details>
+<summary>Screenshot</summary>
+<br>
+<img src="documentation/testing/lighthouse/lighthouse-addbook.png">
+</details>
+
+#### Edit Book Page
+<details>
+<summary>Screenshot</summary>
+<br>
+<img src="documentation/testing/lighthouse/lighthouse-editbook.png">
+</details>
+
 
 ## Testing user stories
 
