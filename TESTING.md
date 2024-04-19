@@ -11,17 +11,56 @@
     1. [Solved Bugs](#solved-bugs)
     2. [Known Bugs](#known-bugs)
 
-## HTML validation
+## HTML Validation
 
-HTML validation was done using the WSC Markup Validation Service.
-[Welcome page]()
-[Sign Up page]()
-[Log In page]()
-[Wishlist page]()
-[Add Book page]()
-[Edit Book page]()
+Ensuring compliance with HTML standards is crucial for maintaining a consistent and user-friendly web experience. Below, you'll find validation results for each page, detailing any errors encountered during the validation process and the steps taken to address them.
+
+### Validation Results:
+
+#### Welcome Page:
+- Initial Validation: ![Initial Welcome Page Validation](documentation/testing/html-val/initialwelcomepage.png)
+- Final Validation: ![Welcome Page Validation](documentation/testing/html-val/welcomepageval.png)
+
+An error appeared during the initial validation of the welcome page, which was promptly addressed to ensure compliance with HTML standards.
+
+#### Sign Up Page:
+- Validation: ![Sign Up Page Validation](documentation/testing/html-val/signupval.png)
+
+#### Log In Page:
+- Validation: ![Log In Page Validation](documentation/testing/html-val/login.png)
+
+#### Wishlist Page:
+- Validation: ![Wishlist Page Validation](documentation/testing/html-val/wishlistval.png)
+
+#### Add Book Page:
+- Validation: ![Add Book Page Validation](documentation/testing/html-val/addbookval.png)
+
+#### Edit Book Page:
+- Validation: ![Edit Book Page Validation](documentation/testing/html-val/editbookval.png)
 
 ## CSS validation
+For CSS validation i have uses jigsaw validator 
+I tested all pages and the same error kept coming up 
+[Error](documentation/testing/css-val/css-error-val.png)
+
+To fix this i overrode the styling in my own css file. 
+
+#### Sign Up Page:
+- Validation: ![Sign Up Page Validation](documentation/testing)
+
+#### Log In Page:
+- Validation: ![Log In Page Validation](documentation/testing)
+
+#### Wishlist Page:
+- Validation: ![Wishlist Page Validation](documentation/testing)
+
+#### Add Book Page:
+- Validation: ![Add Book Page Validation](documentation/testing)
+
+#### Edit Book Page:
+- Validation: ![Edit Book Page Validation](documentation/testing)
+
+
 ## JavaScript validation
 ## Python validation
 ## Lighthouse
