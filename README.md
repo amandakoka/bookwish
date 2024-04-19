@@ -319,11 +319,15 @@ You can clone the repository by following these steps:
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal, then paste the link you copied in step 3 and Press enter.
 
-# Credits 
-## Media 
-Background image from [freepik](https://www.freepik.com/free-photo/blurred-books-library-bookcase_2475569.htm#fromView=search&page=2&position=31&uuid=fe4e52a4-5cc3-4bf7-840d-df2de58fbc26)
+# Credits
 
-## Code 
+## Media 
+Background image sourced from [freepik](https://www.freepik.com/free-photo/blurred-books-library-bookcase_2475569.htm#fromView=search&page=2&position=31&uuid=fe4e52a4-5cc3-4bf7-840d-df2de58fbc26).
+
+## Code
+
+- Flash messaging reference: [Flask documentation](https://flask.palletsprojects.com/en/2.3.x/patterns/flashing/)
+
 
 # Potential Future Additions
 
