@@ -28,6 +28,7 @@
 9. [Credits](#credits) 
     1. [Media](#media)
     2. [Code](#code)
+10. [Potential Future Additions](#potential-future-additions)
 
 # Project Goals 
 The concept for the BookWish website stemmed from observing the needs of my book-loving family and friends. As avid readers, they constantly seek out new books, discovering titles they're drawn to but often face challenges in obtaining or reading them. Additionally, they struggle to keep track of their growing list of desired reads. I've witnessed friends excitedly stumble upon a book they fancy, only to forget about it later due to lack of a tracking system. Recognizing this common dilemma among readers, I envisioned BookWish as a solution, empowering users to effortlessly compile and manage their book wishlist in one convenient platform.
@@ -57,7 +58,6 @@ BookWish caters to avid readers and book enthusiasts who seek a centralized plat
 6.  **Deleting Books:** As a user, I want to have the option to remove books from my wishlist.
 7. **Private Wishlist:** As a user, I want assurance that my wishlist remains private and accessible only to me.
 8. **Easy Logout:** As a user, I want a straightforward and quick method to log out of my account, ensuring my privacy and security.
-
 
 # Design Choices 
 
@@ -324,3 +324,14 @@ You can clone the repository by following these steps:
 Background image from [freepik](https://www.freepik.com/free-photo/blurred-books-library-bookcase_2475569.htm#fromView=search&page=2&position=31&uuid=fe4e52a4-5cc3-4bf7-840d-df2de58fbc26)
 
 ## Code 
+
+# Potential Future Additions
+
+In consideration of potential future developments, the following features may be added to enhance the BookWish platform:
+
+1. **Read Page**: Implementation of a dedicated "Read" page where users can transition books from their wishlist after completion. This feature would allow users to leave reviews for books they've read.
+
+2. **Collaborative Features**: Introduce collaboration functionalities, allowing users to connect with friends, share wishlists, and recommend books to each other. Enhancements will include a friendship system and the ability to share wishlists exclusively with friends, fostering a sense of community and interaction among users.
+
+Incorporating these features will further enrich the BookWish experience, fostering a vibrant and collaborative community of book enthusiasts.
+
