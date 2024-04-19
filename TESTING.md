@@ -12,10 +12,20 @@
     2. [Known Bugs](#known-bugs)
 
 ## HTML validation
+
+HTML validation was done using the WSC Markup Validation Service.
+[Welcome page]()
+[Sign Up page]()
+[Log In page]()
+[Wishlist page]()
+[Add Book page]()
+[Edit Book page]()
+
 ## CSS validation
 ## JavaScript validation
 ## Python validation
 ## Lighthouse
+
 ## Testing user stories
 
 1. As a user, I want to understand the purpose of the site and navigate it easily.
@@ -28,7 +38,7 @@
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories/">
+<img src="documentation/user-stories/userstory1.png">
 </details>
 
 2. As a user, I want to register for an account.
@@ -41,7 +51,7 @@
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories">
+<img src="documentation/user-stories/userstory2.png">
 </details>
 
 3. As a user, I want to log into my account.
@@ -55,7 +65,8 @@
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories">
+<img src="documentation/user-stories/userstory3.png">
+<img src="documentation/user-stories/userstory33.png">
 </details>
 
 4. As a user, I want to easily add books to my wishlist.
@@ -68,7 +79,7 @@
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories">
+<img src="documentation/user-stories/userstory44.png">
 </details>
 
 5. As a user, I want to be able to edit the details of books I have added to my wishlist.
@@ -81,7 +92,7 @@
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories">
+<img src="documentation/user-stories/userstory5.png">
 </details>
 
 6. As a user, I want to have the option to remove books from my wishlist.
@@ -93,7 +104,7 @@
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories">
+<img src="documentation/user-stories/userstory6.png">
 </details>
 
 7. As a user, I want assurance that my wishlist remains private and accessible only to me.
@@ -105,7 +116,7 @@
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories">
+<img src="documentation/user-stories/userstory7.png">
 </details>
 
 8. As a user, I want a straightforward and quick method to log out of my account, ensuring my privacy and security.
@@ -117,7 +128,7 @@
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories">
+<img src="documentation/user-stories/userstory8.png">
 </details>
 
 ## Bugs
