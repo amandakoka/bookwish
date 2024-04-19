@@ -1,5 +1,5 @@
 # BookWish
-[View website here]()
+[View website here](https://book-wish-app-9a35c4271437.herokuapp.com/)
 
 ![Website on different views]()
 
@@ -55,6 +55,9 @@ BookWish caters to avid readers and book enthusiasts who seek a centralized plat
 4.  **Adding Books:** As a user, I want to easily add books to my wishlist.
 5.  **Editing Books:** As a user, I want to be able to edit the details of books I have added to my wishlist.
 6.  **Deleting Books:** As a user, I want to have the option to remove books from my wishlist.
+7. **Private Wishlist:** As a user, I want assurance that my wishlist remains private and accessible only to me.
+8. **Easy Logout:** As a user, I want a straightforward and quick method to log out of my account, ensuring my privacy and security.
+
 
 # Design Choices 
 
