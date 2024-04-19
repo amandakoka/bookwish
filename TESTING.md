@@ -101,7 +101,7 @@ By documenting these challenges and decisions, I ensure transparency and account
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories/userstory1.png">
+<img src="documentation/testing/user-stories/userstory1.png">
 </details>
 
 2. As a user, I want to register for an account.
@@ -114,7 +114,7 @@ By documenting these challenges and decisions, I ensure transparency and account
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories/userstory2.png">
+<img src="documentation/testing/user-stories/userstory2.png">
 </details>
 
 3. As a user, I want to log into my account.
@@ -128,8 +128,8 @@ By documenting these challenges and decisions, I ensure transparency and account
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories/userstory3.png">
-<img src="documentation/user-stories/userstory33.png">
+<img src="documentation/testing/user-stories/userstory3.png">
+<img src="documentation/testing/user-stories/userstory33.png">
 </details>
 
 4. As a user, I want to easily add books to my wishlist.
@@ -142,7 +142,7 @@ By documenting these challenges and decisions, I ensure transparency and account
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories/userstory44.png">
+<img src="documentation/testing/user-stories/userstory44.png">
 </details>
 
 5. As a user, I want to be able to edit the details of books I have added to my wishlist.
@@ -155,7 +155,7 @@ By documenting these challenges and decisions, I ensure transparency and account
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories/userstory5.png">
+<img src="documentation/testing/user-stories/userstory5.png">
 </details>
 
 6. As a user, I want to have the option to remove books from my wishlist.
@@ -167,7 +167,7 @@ By documenting these challenges and decisions, I ensure transparency and account
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories/userstory6.png">
+<img src="documentation/testing/user-stories/userstory6.png">
 </details>
 
 7. As a user, I want assurance that my wishlist remains private and accessible only to me.
@@ -179,7 +179,7 @@ By documenting these challenges and decisions, I ensure transparency and account
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories/userstory7.png">
+<img src="documentation/testing/user-stories/userstory7.png">
 </details>
 
 8. As a user, I want a straightforward and quick method to log out of my account, ensuring my privacy and security.
@@ -191,7 +191,7 @@ By documenting these challenges and decisions, I ensure transparency and account
 <details>
 <summary>Screenshots</summary>
 <br>
-<img src="documentation/user-stories/userstory8.png">
+<img src="documentation/testing/user-stories/userstory8.png">
 </details>
 
 ## Bugs
