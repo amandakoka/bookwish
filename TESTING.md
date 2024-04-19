@@ -19,72 +19,71 @@ Ensuring compliance with HTML standards is crucial for maintaining a consistent 
 
 <details>
   <summary>Welcome Page:</summary>
-  - Initial Validation: ![Initial Welcome Page Validation](documentation/testing/html-val/initialwelcomepage.png)
-  - Final Validation: ![Welcome Page Validation](documentation/testing/html-val/welcomepageval.png)
+  <br>
+  - Initial Validation: <img src="documentation/testing/html-val/initialwelcomepage.png">
+  - Final Validation:<img src="documentation/testing/html-val/welcomepageval.png">
 
   An error appeared during the initial validation of the welcome page, which was promptly addressed to ensure compliance with HTML standards.
 </details>
 
 <details>
   <summary>Sign Up Page:</summary>
-  - Validation: ![Sign Up Page Validation](documentation/testing/html-val/signupval.png)
+  <br>
+  - Validation: <img src="documentation/testing/html-val/signupval.png">
 </details>
 
 <details>
   <summary>Log In Page:</summary>
-  - Validation: ![Log In Page Validation](documentation/testing/html-val/login.png)
+  <br>
+  - Validation: <img src="documentation/testing/html-val/login.png">
 </details>
 
 <details>
   <summary>Wishlist Page:</summary>
-  - Validation: ![Wishlist Page Validation](documentation/testing/html-val/wishlistval.png)
+  <br>
+  - Validation: <img src="documentation/testing/html-val/wishlistval.png">
 </details>
 
 <details>
   <summary>Add Book Page:</summary>
-  - Validation: ![Add Book Page Validation](documentation/testing/html-val/addbookval.png)
+  <br>
+  - Validation: <img src="documentation/testing/html-val/addbookval.png">
 </details>
 
 <details>
   <summary>Edit Book Page:</summary>
-  - Validation: ![Edit Book Page Validation](documentation/testing/html-val/editbookval.png)
+  <br>
+  - Validation: <img src="documentation/testing/html-val/editbookval.png">
 </details>
 
 ## CSS Validation
 
-During CSS validation using the Jigsaw validator, the same errors were encountered across all pages:
+During CSS validation using the Jigsaw validator, I encountered persistent errors across all pages. The validation process flagged errors that appear to originate from the Materialize CSS framework, rather than from the custom code I have written.
 
 <details>
-  <summary>Error</summary>
-  ![Error](documentation/testing/css-val/css-error-val.png)
+  <summary>Error Details</summary>
+  <br>
+  <img src="documentation/testing/css-val/css-error-val.png">
 </details>
 
-To resolve this issue, I applied overrides in my own CSS file.
+### Challenges Encountered:
 
-<details>
-  <summary>Sign Up Page:</summary>
-  - Validation: ![Sign Up Page Validation](documentation/testing)
-</details>
+1. **Identification of Error Causes**: Upon investigation, I discovered that the errors were triggered by specific CSS properties or rules within the Materialize CSS framework.
 
-<details>
-  <summary>Log In Page:</summary>
-  - Validation: ![Log In Page Validation](documentation/testing)
-</details>
+2. **Application of Overrides**: I attempted to address these errors by applying overrides in my custom CSS file. However, despite my efforts, the errors persisted.
 
-<details>
-  <summary>Wishlist Page:</summary>
-  - Validation: ![Wishlist Page Validation](documentation/testing)
-</details>
+### Resolution Status:
 
-<details>
-  <summary>Add Book Page:</summary>
-  - Validation: ![Add Book Page Validation](documentation/testing)
-</details>
+Given that the errors seem to stem from the Materialize CSS framework rather than from my own code, I have chosen to leave them unresolved for now. This decision is based on the following considerations:
 
-<details>
-  <summary>Edit Book Page:</summary>
-  - Validation: ![Edit Book Page Validation](documentation/testing)
-</details>
+- **Complexity of Overrides**: Attempting to override Materialize CSS rules may lead to unintended consequences or conflicts with other components.
+- **Minimal Impact**: While CSS compliance is important, the flagged errors do not appear to have a significant impact on the functionality or user experience of my website.
+
+### Next Steps:
+
+Although I have opted to leave the errors unresolved at this time, I remain committed to maintaining high standards of CSS compliance and optimization. In the future, I may revisit these errors and explore alternative approaches to address them effectively.
+
+By documenting these challenges and decisions, I ensure transparency and accountability in my development process, fostering continuous improvement and refinement of my website's CSS code.
 
 ## JavaScript validation
 ## Python validation
@@ -197,14 +196,20 @@ To resolve this issue, I applied overrides in my own CSS file.
 
 ## Bugs
 ### Solved Bugs
- **Bug** | **Fix** |
+|**Num** | **Bug** | **Fix** |
 | ----------- | ----------- |
-| While implementing the wishlist route, I encountered a bug where the wishlist page always displayed an empty list of books, despite adding books to the database. This occurred because I mistakenly placed the return statement above the database query to fetch the list of books. As a result, the query to retrieve the books was never executed, causing the wishlist page to render without any book data.| To resolve this issue, I moved the return statement below the database query, ensuring that the query to fetch the list of books is executed before rendering the wishlist page. This correction allowed the wishlist page to display the correct list of books, restoring the functionality of the wishlist feature. By addressing this bug, I ensured that users can properly view and manage their wishlist, enhancing the overall usability and effectiveness of the application.|
-| After implementing user signup functionality, I encountered an error when submitting the signup form. The error message indicated that the password exceeded the maximum allowed length. This issue arose because the hashed password exceeded the length limit specified in the user model, resulting in validation failure during form submission.| To address this issue, I adjusted the maximum length constraint for passwords in the user model to accommodate longer hashed passwords. By increasing the length limit, I ensured compatibility with the hashed password format while maintaining security standards. After making this modification, the signup form successfully processed passwords of any length within the new constraint, resolving the validation error.|
-| [Edit Book Route Bug](documentation/testing/bugs/edit_book.png) I encountered a bug while creating the edit_book route, where the book_id was undefined, leading to errors during execution. This issue happened because I forgot to pass the book_id parameter in the return render_template function, despite passing the book object. As a result, attempting to run the route triggered an error message. | To address this issue, I ensured the inclusion of the book_id parameter in the template rendering process. This resolved the error, enabling seamless functionality of the edit_book route for manipulating book details. |
-| When attempting to edit a book, I noticed that the content areas were initially blank instead of displaying the existing book details. This required users to rewrite everything, which was inefficient and prone to errors.| To resolve this, I updated the edit_book.html template to include the 'value' attribute for each input field. For example, I added value="{{ book.book_title }}" to ensure that the current book title is displayed in the input field when editing. By prefilling the input fields with existing book details, users can easily make modifications without having to re-enter all the information, thus improving the editing experience and reducing the likelihood of errors.|
-| [Background Bug](documentation/testing/bugs/bgbug.png) I encountered a bug where the background wasn't covering the whole background as a whole, it was split at each end of the form. This occurred because the CSS classes I initially used didn't produce the desired effect.| To fix this, I modified the CSS by including it directly in the body of the HTML document. This adjustment ensured that the background covered the entire background resolving the split background problem. By integrating the CSS directly into the body, I ensured consistent application of the background styling, therefor improving the overall visual coherence of the website.|
-| [Card Size Bug](documentation/testing/bugs/cardsize.png) I encountered a bug where adding books for testing revealed that cards with more content appeared longer than others, resulting in inconsistent card sizes. This occurred due to the absence of styling to ensure uniform card dimensions. | To address this issue, I implemented wishlist card styling to ensure all cards on the wishlist page are of uniform size. This allows users to scroll through cards with extensive content while maintaining visual consistency. By applying this styling, I ensured the consistency of card sizes, improving both the aesthetics and accessibility of the page. |
-| [Double Message Bug](documentation/testing/bugs/double_messages.png)  I encountered a bug where submitting forms resulted in flash messages appearing twice on the page. This occurred because I mistakenly placed a flash message in my base.html instead of my welcome.html. The intended behavior was for the message to appear only when a user logs out of their account and is redirected to the welcome page. | To resolve this issue, I removed the flash message from my base.html and relocated it to my welcome.html. This ensures that the message is displayed correctly only on the welcome page after a user logs out, eliminating the duplication of flash messages. |
+| 1 | While implementing the wishlist route, I encountered a bug where the wishlist page always displayed an empty list of books, despite adding books to the database. This occurred because I mistakenly placed the return statement above the database query to fetch the list of books. As a result, the query to retrieve the books was never executed, causing the wishlist page to render without any book data.| To resolve this issue, I moved the return statement below the database query, ensuring that the query to fetch the list of books is executed before rendering the wishlist page. This correction allowed the wishlist page to display the correct list of books, restoring the functionality of the wishlist feature. By addressing this bug, I ensured that users can properly view and manage their wishlist, enhancing the overall usability and effectiveness of the application.|
+| 2 | After implementing user signup functionality, I encountered an error when submitting the signup form. The error message indicated that the password exceeded the maximum allowed length. This issue arose because the hashed password exceeded the length limit specified in the user model, resulting in validation failure during form submission.| To address this issue, I adjusted the maximum length constraint for passwords in the user model to accommodate longer hashed passwords. By increasing the length limit, I ensured compatibility with the hashed password format while maintaining security standards. After making this modification, the signup form successfully processed passwords of any length within the new constraint, resolving the validation error.|
+| 3 | [Edit Book Route Bug](documentation/testing/bugs/edit_book.png) I encountered a bug while creating the edit_book route, where the book_id was undefined, leading to errors during execution. This issue happened because I forgot to pass the book_id parameter in the return render_template function, despite passing the book object. As a result, attempting to run the route triggered an error message. | To address this issue, I ensured the inclusion of the book_id parameter in the template rendering process. This resolved the error, enabling seamless functionality of the edit_book route for manipulating book details. |
+| 4 | When attempting to edit a book, I noticed that the content areas were initially blank instead of displaying the existing book details. This required users to rewrite everything, which was inefficient and prone to errors.| To resolve this, I updated the edit_book.html template to include the 'value' attribute for each input field. For example, I added value="{{ book.book_title }}" to ensure that the current book title is displayed in the input field when editing. By prefilling the input fields with existing book details, users can easily make modifications without having to re-enter all the information, thus improving the editing experience and reducing the likelihood of errors.|
+| 5 | [Background Bug](documentation/testing/bugs/bgbug.png) I encountered a bug where the background wasn't covering the whole background as a whole, it was split at each end of the form. This occurred because the CSS classes I initially used didn't produce the desired effect.| To fix this, I modified the CSS by including it directly in the body of the HTML document. This adjustment ensured that the background covered the entire background resolving the split background problem. By integrating the CSS directly into the body, I ensured consistent application of the background styling, therefor improving the overall visual coherence of the website.|
+| 6 | [Card Size Bug](documentation/testing/bugs/cardsize.png) I encountered a bug where adding books for testing revealed that cards with more content appeared longer than others, resulting in inconsistent card sizes. This occurred due to the absence of styling to ensure uniform card dimensions. | To address this issue, I implemented wishlist card styling to ensure all cards on the wishlist page are of uniform size. This allows users to scroll through cards with extensive content while maintaining visual consistency. By applying this styling, I ensured the consistency of card sizes, improving both the aesthetics and accessibility of the page. |
+| 7 | [Double Message Bug](documentation/testing/bugs/double_messages.png)  I encountered a bug where submitting forms resulted in flash messages appearing twice on the page. This occurred because I mistakenly placed a flash message in my base.html instead of my welcome.html. The intended behavior was for the message to appear only when a user logs out of their account and is redirected to the welcome page. | To resolve this issue, I removed the flash message from my base.html and relocated it to my welcome.html. This ensures that the message is displayed correctly only on the welcome page after a user logs out, eliminating the duplication of flash messages. |
 
 ### Known Bugs
+
+#### Delete Book Modal Display Issue
+
+Currently, the delete book modal only shows the "Yes" button and not the "No" link. The HTML for the modal does have a "No" option, but for some reason, it doesn't appear. However, the main purpose of the modal is to delete the book, and the "Yes" button completes this function perfectly. Users can also dismiss the modal by clicking anywhere on the page if they choose not to delete the book.
+
+While the absence of the "No" link does not hinder the primary function of the modal, it may lead to some user confusion or uncertainty about the available options within the modal interface. II will continue investigating this issue to resolve it.
