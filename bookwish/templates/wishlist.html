@@ -14,16 +14,19 @@
     {% endwith %}
      <!-- Search Form -->
      <div class="row">
-        <form class="col s12" method="GET" action="{{ url_for('wishlist') }}">
-            <div class="input-field col s12">
-                <input id="search" name="search" type="text" class="validate" value="{{ request.args.get('search', '') }}">
-                <label for="search" class="white-text">Search Wishlist</label>
-            </div>
-            <div class="col s12 center-align">
-                <button type="submit" class="btn orange accent-3">Search</button>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12 m10">
+                    <input id="search" name="search" type="text" class="validate" value="{{ request.args.get('search', '') }}">
+                    <label for="search" class="white-text">Search Wishlist</label>
+                </div>
+                <div class="col s12 m2">
+                    <button type="submit" class="btn orange accent-3" style="width: 100%;">Search</button>
+                </div>
             </div>
         </form>
     </div>
+    
     <div class="row">
         <div class="col s12 center-align">
             <a href="{{ url_for('add_book') }}" class="btn-large orange accent-3">
@@ -31,16 +34,19 @@
             </a>
         </div>
     </div>
+    
     <div class="wishlist-cards row">
         {% for book in books %}
-            <div class="col s12 m6 l3">
+            <div class="col s12 m6 l3 offset-m3">
                 <div class="card blue-grey lighten-1 center-align">
                     <div class="card-content white-text">
                         <span class="card-title">{{ book.book_title }}</span>
-                        <p>{{ book.book_author }}</p>
-                        <p>{{ book.book_genre }}</p>
-                        <a href="{{ book.book_link }}" target="_blank" class="white-text">Link to Book</a>
-                        <p>{{ "Read" if book.has_read else "Unread" }}</p>
+                        <p><strong>Author:</strong> {{ book.book_author }}</p>
+                        <p><strong>Genre:</strong> {{ book.book_genre }}</p>
+                        <p><strong>Status:</strong> {{ "Read" if book.has_read else "Unread" }}</p>
+                        <div class="link-to-book">
+                            <a href="{{ book.book_link }}" target="_blank" class="orange-text text-accent-3"><strong> Link to Book</strong></a>
+                        </div>
                     </div>
                     <div class="card-action">
                         <a href="{{ url_for('edit_book', book_id=book.id) }}" class="btn orange accent-3">Edit</a>
