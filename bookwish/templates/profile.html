@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <div class="card blue-grey lighten-1">
+                <div class="card-content">
+                    <h3 class="white-text center-align"><i class=" small material-icons">account_box</i>My Profile</h3>
+                    <h5 class="white-text center-align"><strong>Username:</strong> {{ user.username }}</h5>
+                    <h5 class="white-text center-align"><strong>Books in Wishlist:</strong> {{ wishlist_count }}</h5>
+                </div>
+                <div class="card-action center-align">
+                    <a href="{{ url_for('wishlist') }}" class="btn orange accent-3">Go to Wishlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
