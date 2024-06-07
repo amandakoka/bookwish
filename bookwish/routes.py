@@ -49,15 +49,32 @@ def logout():
     return redirect(url_for("home"))
 
 
-@app.route("/wishlist")
+@app.route("/wishlist", methods=["GET"])
 def wishlist():
     if "user_id" in session:
         user_id = session["user_id"]
         user = User.query.get(user_id)
         if user:
-            books = user.books 
-            return render_template("wishlist.html", books=books)
-    flash("You need to log in to view your wishlist.", "error")
+            search_query = request.args.get('search', '').strip()
+            if search_query:
+                # Perform search using LIKE operator for case-insensitive search
+                books = Book.query.filter(
+                    Book.user_id == user_id,
+                    (Book.book_title.ilike(f"%{search_query}%"))  # ILIKE for case-insensitive search
+                ).all()
+            else:
+                books = user.books  # Display all books if no search query is provided
+            
+            if books:
+                return render_template("wishlist.html", books=books)
+            else:
+                flash(f"No books found matching '{search_query}'.", "info")
+                return render_template("wishlist.html", books=user.books)
+        else:
+            flash("User not found.", "error")
+    else:
+        flash("You need to log in to view your wishlist.", "error")
+    
     return redirect(url_for("login"))
 
 
@@ -117,4 +134,3 @@ def delete_book(book_id):
         db.session.commit()
         return redirect(url_for('wishlist'))
     return render_template("wishlist.html", book=book)
-
