@@ -1,4 +1,4 @@
-from bookwish import db 
+from bookwish import db
 
 
 class User(db.Model):
@@ -16,5 +16,4 @@ class Book(db.Model):
     has_read = db.Column(db.Boolean, default=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
-    user = db.relationship('User', backref=db.backref('books',cascade='all, delete', lazy=True))
-
+    user = db.relationship('User', backref=db.backref('books', cascade='all, delete', lazy=True))
