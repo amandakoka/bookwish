@@ -40,6 +40,10 @@ main {
     letter-spacing: 0; /* Override the letter-spacing property */
 }
 
+.input-field input[type=text] {
+    color: white;
+}
+
   
 
 
