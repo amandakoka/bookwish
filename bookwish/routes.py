@@ -66,6 +66,15 @@ def add_book():
     if request.method == "POST":
         if "user_id" in session:
             user_id = session["user_id"]
+            book_title = request.form.get("book_title")
+            book_author = request.form.get("book_author")
+
+            # Check if the book already exists in the user's wishlist
+            existing_book = Book.query.filter_by(user_id=user_id, book_title=book_title, book_author=book_author).first()
+            if existing_book:
+                flash("This book is already in your wishlist.", "error")
+                return redirect(url_for("wishlist"))
+
             book = Book(
                 book_title=request.form.get("book_title"),
                 book_author=request.form.get("book_author"),
@@ -76,6 +85,7 @@ def add_book():
             )
             db.session.add(book)
             db.session.commit()
+            flash("Book added to your wishlist.", "success")
             return redirect(url_for("wishlist"))
         else:
             flash("You need to log in to add a book to your wishlist.", "error")
