@@ -62,20 +62,39 @@ def wishlist():
                     Book.user_id == user_id,
                     (Book.book_title.ilike(f"%{search_query}%"))  # ILIKE for case-insensitive search
                 ).all()
+
+                if books:
+                    return render_template("wishlist.html", books=books)
+                else:
+                    flash(f"No books found matching '{search_query}'.", "info")
+                    return render_template("wishlist.html", books=user.books)
             else:
-                books = user.books  # Display all books if no search query is provided
-            
-            if books:
+                # Display all books if no search query is provided
+                books = user.books
                 return render_template("wishlist.html", books=books)
-            else:
-                flash(f"No books found matching '{search_query}'.", "info")
-                return render_template("wishlist.html", books=user.books)
         else:
             flash("User not found.", "error")
     else:
         flash("You need to log in to view your wishlist.", "error")
-    
+
     return redirect(url_for("login"))
+
+
+
+@app.route('/profile')
+def profile():
+    if 'user_id' in session:
+        user_id = session['user_id']
+        user = User.query.get(user_id)
+        if user:
+            wishlist_count = Book.query.filter_by(user_id=user_id).count()
+            return render_template('profile.html', user=user, wishlist_count=wishlist_count)
+        else:
+            flash('User not found.', 'error')
+            return redirect(url_for('home'))
+    else:
+        flash('You need to log in to view your profile.', 'error')
+        return redirect(url_for('login'))
 
 
 @app.route("/add_book", methods=["GET", "POST"])
