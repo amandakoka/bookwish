@@ -8,6 +8,7 @@
 1. [Project Goals](#project-goals)
     1. [User Goals](#user-goals)
     2. [Site Owner Goals](#site-owner-goals)
+    3. [User Feedback and Involvement](#user-feedback-and-involvement)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
     2. [User Requirements and Expectations](#user-requirements-and-expectations)
@@ -40,6 +41,30 @@ The concept for the BookWish website stemmed from observing the needs of my book
 * Provide an intuitive and enjoyable platform for users to curate their book wishlist.
 * Ensure the website is interactive, responsive, and accessible across various devices.
 
+# User Feedback and Involvement
+
+To ensure the BookWish website meets the needs of its users, I sought input from avid book readers among my family and friends. Their feedback played a crucial role in shaping the design and features of the platform.
+
+### Gathering Feedback
+- **Discussions:** I talked with family and friends who love reading to understand what features they would like in a book wishlist website.
+- **Suggestions:** They provided valuable insights and suggestions on what would make the platform user-friendly and useful.
+
+### Key Insights
+- **Wishlist Functionality:** Users wanted an easy way to add, edit, and delete books from their wishlist.
+- **Privacy:** Ensuring that the wishlist remains private and secure was important to them.
+- **Simple Navigation:** They preferred a clean, intuitive interface for effortless navigation.
+- **Accessibility:** They wanted the website to work well on different devices, allowing them to manage their wishlist anywhere.
+- **Engaging Design:** A visually appealing design that reflects the theme of books and reading was appreciated.
+
+### Implementing Feedback
+The feedback from my family and friends directly influenced the following aspects of BookWish:
+- **Colour Scheme:** A vibrant yet calming color palette was chosen based on their preferences.
+- **User Interface:** The layout was designed to be simple and intuitive, making it easy to manage wishlists.
+- **Privacy Features:** Privacy measures were put in place to ensure users' wishlists are secure.
+- **Responsive Design:** The website is designed to be accessible across various devices for a seamless experience.
+
+By incorporating the opinions of book-loving family and friends, BookWish has been tailored to provide a user-friendly and engaging experience.
+
 # User Experience 
 ## Target Audience 
 BookWish caters to avid readers and book enthusiasts who seek a centralized platform to organize their reading preferences and track desired books.
@@ -58,6 +83,52 @@ BookWish caters to avid readers and book enthusiasts who seek a centralized plat
 6.  **Deleting Books:** As a user, I want to have the option to remove books from my wishlist.
 7. **Private Wishlist:** As a user, I want assurance that my wishlist remains private and accessible only to me.
 8. **Easy Logout:** As a user, I want a straightforward and quick method to log out of my account, ensuring my privacy and security.
+9. **Profile Page:** As a user I'd like to have a profile page which shows me my details and how many books I have in my wishlist.
+
+# Rationale for Development
+
+## Purpose
+The BookWish website was conceived and developed with the primary purpose of providing an engaging and useful experience centered around book wishlists. The project aims to serve as an interactive tool that helps users keep track of books they want to read or buy, making it easier to manage their reading goals and preferences.
+
+## User Needs
+The development of BookWish addresses several key user needs:
+
+- **Organization:** Users need a central platform to compile and manage their book wishlist, helping them keep track of desired reads and purchases.
+- **Accessibility:** The platform should be accessible on various devices, ensuring users can manage their wishlist anytime, anywhere.
+- **Ease of Use:** The interface should be intuitive, allowing users of all technical abilities to navigate the site and perform actions like adding or editing books without difficulty.
+- **Privacy:** Users need assurance that their wishlist remains private and secure.
+
+## Target Audience
+BookWish is designed to cater to a diverse audience, including:
+
+- **Avid Readers:** Individuals who frequently read and seek to keep track of books they wish to read.
+- **Book Enthusiasts:** People who love discovering and exploring new books and want a platform to organize their findings.
+- **General Public:** Anyone looking for a convenient way to manage a list of desired books, ensuring they never forget a title they want to read.
+
+## User Stories
+The development of BookWish is guided by specific user stories, ensuring that the project meets the needs and expectations of its target audience:
+
+1. **As a user, I want to understand the purpose of the site and navigate it easily.**
+    - Clear explanations and intuitive navigation help users understand how to use the site effectively.
+2. **As a user, I want to register for an account.**
+    - A straightforward registration process allows users to create an account and start managing their wishlist.
+3. **As a user, I want to log into my account.**
+    - Easy login ensures users can quickly access their wishlist.
+4. **As a user, I want to easily add books to my wishlist.**
+    - Simple forms and controls enable users to add new books to their wishlist.
+5. **As a user, I want to be able to edit the details of books I have added to my wishlist.**
+    - Users can update book information as needed.
+6. **As a user, I want to have the option to remove books from my wishlist.**
+    - Users can easily delete books they no longer wish to track.
+7. **As a user, I want assurance that my wishlist remains private and accessible only to me.**
+    - Privacy features ensure users' wishlists are secure.
+8. **As a user, I want a straightforward and quick method to log out of my account, ensuring my privacy and security.**
+    - Easy logout functionality enhances security and user control.
+
+## Conclusion
+In conclusion, the development of BookWish aims to provide an engaging and useful experience for users interested in managing their book wishlists. By addressing the needs of avid readers, book enthusiasts, and the general public, the project aims to promote organized and enjoyable reading habits through an accessible and intuitive platform. The website's user-centric design, including intuitive navigation, privacy features, and responsive functionality, ensures a seamless and enjoyable experience for users across different devices and skill levels.
+
+The project's well-defined purpose, clear user stories, and consideration of user needs and expectations contribute to its overall success as a valuable tool for managing book wishlists. Through continuous improvement and user feedback, BookWish will evolve to better serve its audience and maintain its position as a trusted resource for book lovers.
 
 # Design Choices 
 
@@ -79,7 +150,7 @@ The colour scheme for this project was carefully chosen to harmonize with the ba
 ## Images 
 The background imagery of books was carefully selected to resonate with the website's purpose and theme. Books symbolize knowledge, exploration, and personal growth, aligning perfectly with the concept of a book wishlist platform. The use of imagery not only enhances visual appeal but also reinforces the website's identity and mission. The image used is credited in the credits section at the bottom of this file.
 ## Structure 
-The website is structured in a user-friendly accessible way. The webiste consists of 4 pages:
+The website is structured in a user-friendly accessible way. The webiste consists of 7 pages:
 1. Homepage:
 - The user is greeted straight away with a welcome message and the purpose of the website is explained and a link to register for an account or sign in if you already have an account. 
 2. Register page:
@@ -90,6 +161,12 @@ The website is structured in a user-friendly accessible way. The webiste consist
 - Once they have signed in they have access to their own book wishlist.
 4. Wishlist page:
 - This is the main page of the webiste where users can add, edit and delete books to their wishlist. Only users logged in can access this if not theyre redirected to the log in page with a message saying you need to be logged in to view the wishlist.
+5. Add Book page:
+- Users can add a book to their wishlist by filling out a form with the book's details.
+6. Edit Book page:
+- Users can edit the details of books on their wishlist and save the changes.
+7. Profile page:
+- Users can view their username and see how many books they have on their wishlist.
 
 ## Wireframes 
 * [Home page](documentation/wireframes/welcomepage.png)
@@ -114,13 +191,14 @@ The website is structured in a user-friendly accessible way. The webiste consist
 </details>
 
 # Features 
-This website consists of 6 pages which are extended from a base template.
+This website consists of 7 pages which are extended from a base template.
 - Welcome page 
 - Sign Up page 
 - Login Page
 - Wishlist Page
 - Add Book page 
 - Edit Book page 
+- Profile Page
 
 ### Home page
 - Welcomes the user and explains the purpose of the site and has links to sign up or log in. 
@@ -156,6 +234,14 @@ This website consists of 6 pages which are extended from a base template.
 <img src="documentation/features/loginsuccess.png">
 </details>
 
+### Wishlist Search Engine 
+- Users can easily search for books within their wishlist using the search bar. This feature helps users quickly find specific books by title, making it more convenient to manage and locate items in their wishlist.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/">
+</details>
+
 ### Add Book 
 - Users can add a book to their wishlist by clicking on the "Add Book" button, which redirects them to the add book page. Here, they fill out a form with details such as book title, author, etc. Once submitted, the book is added to their wishlist.
 <details>
@@ -178,6 +264,14 @@ This website consists of 6 pages which are extended from a base template.
 <summary>Screenshots</summary>
 <br>
 <img src="documentation/features/modaldelete.png">
+</details>
+
+### Profile Page
+- Users can easily search for books within their wishlist using the search bar. This feature helps users quickly find specific books by title, making it more convenient to manage and locate items in their wishlist.
+<details>
+<summary>Screenshots</summary>
+<br>
+<img src="documentation/features/">
 </details>
 
 ### Responsive Design:
