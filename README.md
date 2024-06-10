@@ -421,7 +421,8 @@ Background image sourced from [freepik](https://www.freepik.com/free-photo/blurr
 ## Code
 
 - Flash messaging reference: [Flask documentation](https://flask.palletsprojects.com/en/2.3.x/patterns/flashing/)
-
+- Search functionality:
+  - Stack Overflow, Flask Documentation, and PostgreSQL Documentation were used to build the search functionality. Stack Overflow provided various threads that offered solutions and insights into implementing search queries in Flask applications. The Flask Documentation was instrumental in understanding how to handle requests, perform database queries, and render templates. PostgreSQL Documentation helped in utilizing the ILIKE operator for case-insensitive searches in the database.
 
 # Potential Future Additions
 
