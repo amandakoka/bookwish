@@ -1,7 +1,7 @@
 # BookWish
 [View website here](https://book-wish-app-9a35c4271437.herokuapp.com/)
 
-![Website on different views]()
+![Website on different views](documentation/bookwishdiffscreens.png)
 
 ## Table of Content
 
